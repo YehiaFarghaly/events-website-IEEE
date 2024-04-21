@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,7 +20,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+  test:
+    runs-on: ubuntu-latest
 
-      - name: Run tests
+    steps:
+      -  uses: actions/checkout@v3
+
+      - name: Run Jest
         run: npm test
-
+      
