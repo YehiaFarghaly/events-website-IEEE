@@ -26,4 +26,4 @@ jobs:
         needs: install-node
         steps:
           - name: "Deploying the application"
-            run: echo "Deploying the app.."
+            run: echo "Deploying the app"
