@@ -1,5 +1,5 @@
 
 test('CI/CD pipeline flow test', () => {
 
-    expect(true).toBe(true);
+    expect(true).toBe(false);
 });
