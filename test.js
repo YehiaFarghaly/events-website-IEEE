@@ -1,3 +1,3 @@
 test('CI/CD pipeline test', () => {
-    expect(true).toBe(true);
+    expect(true).toBe(false);
 })
