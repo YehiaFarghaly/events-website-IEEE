@@ -19,14 +19,6 @@ jobs:
               run: npm install
             - name: Run tests
               run: npm test
-    deployment:
-        runs-on: ubuntu-latest
-        needs: build-and-test
-        env: 
-            MONGO_URI: ${{secrets.MONGO_URI}}
-        steps:
-            - name: Deploy Code
-              run: echo "Deploying the application Connected to db using ${{secrets.MONGO_URI}}"
-        
+   
              
               
